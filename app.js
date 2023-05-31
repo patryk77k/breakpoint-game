@@ -3,6 +3,10 @@ const blockWidth = 100;
 const grid = document.getElementById("grid");
 const userStart = [230, 10];
 let userCurrent = userStart;
+
+const ballStart = [270, 35];
+let ballCurrent = ballStart;
+
 const gridWidth = 560;
 
 class Block {
@@ -74,3 +78,10 @@ function moveUser(e) {
 }
 
 document.addEventListener("keydown", moveUser);
+
+//add ball
+const ball = document.createElement("div");
+ball.classList.add("ball");
+ball.style.left = ballCurrent[0] + "px";
+ball.style.bottom = ballCurrent[1] + "px";
+grid.appendChild(ball);
