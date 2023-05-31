@@ -8,6 +8,10 @@ const ballStart = [270, 35];
 let ballCurrent = ballStart;
 
 const gridWidth = 560;
+let xDirection = 2;
+let yDirection = 2;
+
+const ballDimension = 20;
 
 class Block {
   constructor(xAxis, yAxis) {
@@ -82,6 +86,31 @@ document.addEventListener("keydown", moveUser);
 //add ball
 const ball = document.createElement("div");
 ball.classList.add("ball");
-ball.style.left = ballCurrent[0] + "px";
-ball.style.bottom = ballCurrent[1] + "px";
+drawBall();
 grid.appendChild(ball);
+
+//draw ball
+function drawBall() {
+  ball.style.left = ballCurrent[0] + "px";
+  ball.style.bottom = ballCurrent[1] + "px";
+}
+
+function moveBall() {
+  ballCurrent[0] += xDirection;
+  ballCurrent[1] += yDirection;
+  drawBall();
+
+  if (ballCurrent[0] >= gridWidth - ballDimension) {
+    changeDirection();
+  }
+  if (ballCurrent[1])
+}
+
+function changeDirection() {
+  if (xDirection === 2 && yDirection === 2) {
+    xDirection = -2;
+    yDirection = 2;
+  }
+}
+
+setInterval(moveBall, 30);
