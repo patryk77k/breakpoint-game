@@ -6,7 +6,7 @@
 }
 #grid {
   position: relative;
-  width: 600px;
+  width: 560px;
   height: 300px;
   border: 1px solid black;
 }
@@ -17,4 +17,12 @@
   height: 20px;
   border: 1px black solid;
   background-color: red;
+}
+
+.user {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  border: 1px black solid;
+  background-color: purple;
 }
