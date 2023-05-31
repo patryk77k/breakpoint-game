@@ -3,6 +3,7 @@ const blockWidth = 100;
 const grid = document.getElementById("grid");
 const userStart = [230, 10];
 let userCurrent = userStart;
+const gridWidth = 560;
 
 class Block {
   constructor(xAxis, yAxis) {
@@ -57,7 +58,18 @@ grid.appendChild(user);
 function moveUser(e) {
   switch (e.key) {
     case "ArrowLeft":
-      
+      if (userCurrent[0] > 0) {
+        userCurrent[0] -= 10;
+        user.style.left = userCurrent[0] + "px";
+      }
+      break;
+
+    case "ArrowRight":
+      if (userCurrent[0] < gridWidth - blockWidth) {
+        userCurrent[0] += 10;
+        user.style.left = userCurrent[0] + "px";
+      }
+      break;
   }
 }
 
