@@ -15,30 +15,31 @@
  <i> More Info in package.json</i>
 
  
+## 💻 What I learned:
+  
+- JavaScript Concepts:
 
-## 🚀 Features: 
+    Event handling: Utilizing addEventListener to capture user keyboard input for moving the user block.
+    DOM manipulation: Creating, styling, and positioning elements dynamically within the game grid using JavaScript.
+    Animation: Implementing animation by updating element positions at intervals using setInterval.
+    Object-Oriented Programming (OOP): Implementing a Block class to create block instances and manage their positions.
 
-- Register a new user with an avatar:
-        Implement a user registration system allowing the upload of an avatar image.
-        Store user data in a database along with the avatar image path.
+- Game Logic:
 
-- Login & logout for new users:
-        Develop functionality for user login and logout.
-        Utilize authentication tokens or sessions to manage user login/logout sessions.
+    Basic collision detection: Understanding the concept of ball movement and collision with the window edges (gridWidth).
+    Incorporating movement: Managing the movement of the ball (moveBall()) by changing its coordinates based on direction variables.
+    Handling boundaries: Limiting the user's movement within the game window and ensuring the ball bounces off the edges.
 
-- Create a task and assign it to a user:
-        Implement a feature to create tasks and associate them with specific users.
-        Store tasks in a database, linking them to the assigned user.
+- Project Organization:
 
-- Allow marking a task as done only for users who are presently logged in (indicated by a green dot) and are assigned to the project.
+    Structuring the code into logical components such as functions for user movement, ball movement, drawing elements, and block generation.
+    Separating concerns: Dividing the code into distinct functions for readability and maintainability.
 
-- Filter tasks by categories:
-        Develop a filtering mechanism enabling users to filter tasks based on categories.
-        Retrieve tasks from the database based on the selected category.
+- Debugging Skills:
 
-- Add comments to a task:
-        Implement the ability to add comments to tasks.
-        Store comments in the database, associating them with the respective task.>
+    Identifying and resolving issues related to movement, positioning, or element interaction.
+    Experimenting and tweaking variables or logic to achieve the desired behavior of the game.
 
+- Game Development Concepts:
 
-
+    Understanding the fundamental principles of game design, including user interaction, object movement, and collision detection.
